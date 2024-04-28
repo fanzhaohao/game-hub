@@ -7,12 +7,13 @@ export interface Platform {
   name: string;
   slug: string;
 }
-interface Game {
+export interface Game {
   // Define the Game object
   id: number;
   name: string;
   background_image: string;
   parent_platforms: { platform: Platform }[]; // Array of platforms
+  metacritic: number;
 }
 
 interface FetchGamesResponse {
@@ -43,4 +44,3 @@ const useGames = () => {
 };
 
 export default useGames;
-export type { Game };
