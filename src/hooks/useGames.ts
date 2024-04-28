@@ -5,6 +5,7 @@ interface Game {
   // Define the Game object
   id: number;
   name: string;
+  background_image: string;
 }
 
 interface FetchGamesResponse {
@@ -35,3 +36,4 @@ const useGames = () => {
 };
 
 export default useGames;
+export type { Game };
