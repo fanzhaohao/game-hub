@@ -1,6 +1,5 @@
 import { Menu, MenuButton, Button, MenuList, MenuItem } from "@chakra-ui/react";
 import { BsChevronBarDown } from "react-icons/bs";
-import { PrunePayload } from "vite/types/hmrPayload.js";
 
 interface Props {
   onSelectSortOrder: (sortOrder: string) => void;
