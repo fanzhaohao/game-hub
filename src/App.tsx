@@ -1,4 +1,5 @@
 import { Button, ButtonGroup, Grid, GridItem, Show } from "@chakra-ui/react";
+import NavBar from "./componets/NavBar";
 
 function App() {
   return (
@@ -7,10 +8,11 @@ function App() {
         templateAreas={{
           base: `"nav" "main"`,
           lg: `"nav nav" "aside main"`, //1024px
-        }}
+        }} // Build a responsive grid layout by using the templateAreas prop
       >
-        <GridItem area={"nav"} bg={"coral"}>
-          Nav
+        {/* NavBar Aside Main Componet */}
+        <GridItem area={"nav"}>
+          <NavBar />
         </GridItem>
         <Show above="lg">
           <GridItem area={"aside"} bg={"gold"}>
